@@ -29,7 +29,7 @@ export default function AboutMe(props) {
                     My hobbies include game development, 3D modeling, fitness, and mixed martial arts (MMA). I create many of the 3D characters and objects in my games myself using Blender. Fitness is part of my daily routine. I try to get around 60 minutes of activity a day. I enjoy lifting and MMA. I started training MMA in college, doing Muay Tai initially but eventually picking up Jiu Jitsu. I hope to continue with Jiu Jitsu after graduation. 
 
                     </p>
-                    < NavButtons />
+                    < NavButtons refs={props.refs}/>
                 </div>
             </div>
 

@@ -13,8 +13,9 @@ export default function Card(props) {
                             <Image
                                 src={props.pic}
                                 height={200}
+                                width={200}
                                 alt="Picture of the project"
-                                className={styles.imageLink}
+                                className={props.link ? styles.imageLink : ''}
                             />
                         </a>
                     </div>

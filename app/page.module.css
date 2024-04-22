@@ -52,6 +52,21 @@
   padding-top: 20px;
 }
 
+.navLink {
+  color: white; /* Default color */
+  text-decoration: none; /* Remove underline */
+  padding:20px;
+  transition: color 0.3s ease; /* Smooth transition on color change */
+}
+
+.navLink:hover {
+  color: black;
+}
+
+.navLink.selected {
+    color: black; /* Grey color on hover and when selected */
+}
+
 .btn {
   /* Button styles */
   padding: 10px 0px; /* Adjust padding as needed */
@@ -75,7 +90,9 @@
 }
 
 .projectCard {
-  padding: 20px;
+  padding-left: 100px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   height: 260px;
   display: flex;
   justify-content: center;
@@ -93,7 +110,7 @@
   position: relative;
 }
 
-.imageLink:hover {
+.imageLink:hover:not([href=""]) {
   filter: brightness(70%);
 }
 
@@ -104,6 +121,28 @@
 
 .projDesc {
   font-size: 15px;
+}
+
+.resumeBlock {
+  height: 1000px;
+}
+
+
+.resumeIframe {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.contact {
+  margin:auto;
+  text-align: center;
+}
+
+.reflect {
+  margin:auto;
+  width: 70%;
 }
 
 
