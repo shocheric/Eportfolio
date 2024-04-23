@@ -26,6 +26,16 @@
   justify-content: center;
 }
 
+@media screen and (max-width: 650px) {
+  .contentBlock {
+    flex-direction: column; /* Stack flex items vertically */
+    align-items: center; /* Center flex items horizontally */
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
 .parent {
   display: flex;
   background-color: white;
