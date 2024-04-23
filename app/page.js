@@ -9,12 +9,18 @@ import Resume from "./resume/page.js";
 import Contact from "./contact.js";
 import Courses from "./courses.js";
 import {Profiler, useRef} from 'react';
+import { useEffect } from "react";
 
 export default function Home() {
     // create reference
     const projRef = useRef()
     const courseRef = useRef()
     const contactRef = useRef()
+
+    useEffect(() => {
+      require("bootstrap/dist/js/bootstrap.bundle.min.js");
+    }, []);
+    
   return (
     <main className={styles.main}>
       <div className={styles.description}>

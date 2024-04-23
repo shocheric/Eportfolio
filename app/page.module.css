@@ -14,25 +14,46 @@
 .contentBlock {
   width: 100%;
   height: fit-content;
-  padding-left: 18%;
-  padding-right: 18%;
   padding-top: 5%;
   padding-bottom: 5%;
+  padding-left: 18%;
+  padding-right: 18%;
   align-content: center;
+  margin:auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .parent {
   display: flex;
+  background-color: white;
+  border-radius: 20px;
+}
+
+@media screen and (max-width: 1020px) {
+  .parent {
+    flex-direction: column; /* Stack flex items vertically */
+    align-items: center; /* Center flex items horizontally */
+    width: 100%;
+  }
 }
 
 .child p {
-  width: 85%;
+  overflow-wrap: break-word;
 }
+
 
 .aboutHead {
   font-family: AnonProBold;
   font-size: 60px;
   padding-top: 15px;
+}
+
+.aboutImg {
+  max-height: 500px;
+  width: auto;
 }
 
 .sectionHead {
@@ -41,7 +62,6 @@
   padding-top: 15px;
   margin: auto;
   text-align: center;
-  width: 50%;
   border-bottom: 3px solid #000;
   margin-bottom: 30px;
 }
@@ -50,6 +70,14 @@
   display: flex;
   width: 85%;
   padding-top: 20px;
+}
+
+@media screen and (max-width: 650px) {
+  .navButtons {
+    flex-direction: column; /* Stack flex items vertically */
+    align-items: center; /* Center flex items horizontally */
+    width: 100%;
+  }
 }
 
 .navLink {
@@ -90,14 +118,16 @@
 }
 
 .projectCard {
-  padding-left: 100px;
+  padding-left: 20px;
   padding-top: 20px;
   padding-bottom: 20px;
-  height: 260px;
+  height: fit-content;
+  max-width: 850px;
   display: flex;
   justify-content: center;
   align-content: center;
 }
+
 
 .projectTitle {
   color: #004AAD;
@@ -121,6 +151,19 @@
 
 .projDesc {
   font-size: 15px;
+  overflow-wrap: break-word;
+}
+
+.courseCard {
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  height: fit-content;
+  max-width: 700px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
 }
 
 .resumeBlock {
@@ -141,9 +184,19 @@
 }
 
 .reflect {
-  margin:auto;
-  width: 70%;
+  margin: auto;
+  width: 80%;
 }
+
+.sepDiv {
+  padding: 10px;
+}
+
+.custom-collapse {
+  background-color: white;
+}
+
+/* Collapse after width 1020p*/
 
 
 

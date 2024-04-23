@@ -1,18 +1,25 @@
+"use client";
 import styles from "../page.module.css";
 import Image from "next/image";
 import Navbar from "../navbar.js";
+import { useEffect } from "react";
 
 export default function Resume() {
+
+    useEffect(() => {
+        require("bootstrap/dist/js/bootstrap.bundle.min.js");
+      }, []);
+
     return (
-        <main>
-        <div >
+        <main className={styles.main}>
+        <div className={styles.description}>
             <Navbar active="reflection"/>
-            <br></br>
-            <br></br>
-            <h1 className={styles.sectionHead}>
-                Reflection
-            </h1>
             <div className={styles.contentBlock}>
+                <br></br>
+                <br></br>
+                <h1 className={styles.sectionHead}>
+                    Reflection
+                </h1>
                 <div className={styles.reflect}>
                     <p>
                     As a Junior, with possibly just one more year of college education left, I feel as though I’ve learned so much, and yet I know so little about its application in the industry setting. I’ve gained a lot of valuable experience, both in and out of the class. In class, I diligently studied programming principles and dove heavily into systems and backend programming as well as computer engineering. Out of class, I’ve learned and worked on several projects involving frontend development. I’ve programmed several websites, published a game that I fully programmed the frontend of as part of a research study, and more. Other projects have realized the union of both frontend and backend, where I developed full stack applications complete with remote servers. With both backend and frontend programming skills under my belt, I feel confident enough to call myself a full stack software developer. Yet, I know that a career as such involves much more than I have experienced so far. I am excited for the task though. I’m excited to see how industry differs from education, and I’m eager to truly be able to call myself a full stack developer. I hope to earn a career in Software development, and even if my focus is initially on a specific area, I plan to continue to sharpen my skills in others so that I can contribute in as many areas as I can.

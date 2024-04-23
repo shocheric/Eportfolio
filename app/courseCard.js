@@ -4,9 +4,9 @@ import Image from 'next/image';
 
 export default function courseCard(props) {
     return (
-        <div className={styles.projectCard}>
+        <div className={styles.courseCard}>
             <div className={styles.parent}>
-                <div className={styles.child} style={{padding: "10px", width: "700px"}}>
+                <div className={styles.child}>
                     <div>
                         <h3 className={styles.projectTitle}>
                             {props.title}
