@@ -12,15 +12,15 @@ export default function Navbar(props) {
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav" style={{color: "white"}}>
             <ul class="nav navbar-nav">
-                <li class="nav-item">
+                <li className={styles.navText}>
                 <a className={`${styles.navLink} ${props.active=="home" ? styles.selected : ''}`} href="/">Home</a>
                 </li>
 
-                <li class="nav-item">
+                <li className={styles.navText}>
                 <a className={`${styles.navLink} ${props.active=="resume" ? styles.selected : ''}`} href="/resume">Resume</a>
                 </li>
 
-                <li class="nav-item">
+                <li className={styles.navText}>
                 <a className={`${styles.navLink} ${props.active=="reflection" ? styles.selected : ''}`} href="/reflection">Reflection</a>
                 </li>
             </ul>

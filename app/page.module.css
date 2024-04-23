@@ -97,6 +97,14 @@
   transition: color 0.3s ease; /* Smooth transition on color change */
 }
 
+@media screen and (max-width: 990px) {
+  .navText {
+       /* Add your desired padding here */
+       padding-top: 5px;
+       padding-bottom: 5px;
+  }
+}
+
 .navLink:hover {
   color: black;
 }
@@ -194,8 +202,14 @@
 }
 
 .reflect {
-  margin: auto;
   width: 80%;
+  margin: auto;
+}
+
+@media screen and (max-width: 990px) {
+  .reflect {
+       width: 100%;
+  }
 }
 
 .sepDiv {

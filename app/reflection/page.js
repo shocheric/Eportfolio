@@ -14,7 +14,7 @@ export default function Resume() {
         <main className={styles.main}>
         <div className={styles.description}>
             <Navbar active="reflection"/>
-            <div className={styles.contentBlock}>
+            <div className={styles.contentBlock} style={{paddingTop: 0}}>
                 <br></br>
                 <br></br>
                 <h1 className={styles.sectionHead}>
