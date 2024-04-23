@@ -8,15 +8,17 @@ export default function Card(props) {
         <div className={styles.projectCard}>
             <div className={styles.parent}>
                 <div className={styles.child} style={{padding: "15px"}}>
-                    <div style={{borderRadius: '7px', border: '1px solid #004AAD'}}>
+                    <div style={{borderRadius: '7px', border: '2px solid #004AAD', overflow: 'hidden'}}>
                         <a href={props.link} target="_blank" rel="noopener noreferrer">
-                            <Image
-                                src={props.pic}
-                                height={200}
-                                width={200}
-                                alt="Picture of the project"
-                                className={props.link ? styles.imageLink : ''}
-                            />
+                            <div style={{borderRadius: "7px"}}>
+                                <Image
+                                    src={props.pic}
+                                    height={200}
+                                    width={200}
+                                    alt="Picture of the project"
+                                    className={props.link ? styles.imageLink : ''}
+                                />
+                            </div>
                         </a>
                     </div>
                 </div>
